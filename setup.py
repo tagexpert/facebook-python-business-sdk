@@ -28,13 +28,13 @@ this_dir = os.path.dirname(__file__)
 readme_filename = os.path.join(this_dir, 'README.md')
 requirements_filename = os.path.join(this_dir, 'requirements.txt')
 
-PACKAGE_NAME = 'etl_tagexpert_fb'
+PACKAGE_NAME = 'fb'
 PACKAGE_VERSION = '15.0.0'
 PACKAGE_AUTHOR = 'Facebook'
 PACKAGE_AUTHOR_EMAIL = ''
-PACKAGE_URL = 'https://github.com/facebook/facebook-python-business-sdk'
+PACKAGE_URL = 'https://github.com/tagexpert/facebook-python-business-sdk'
 PACKAGE_DOWNLOAD_URL = \
-    'https://github.com/facebook/facebook-python-business-sdk/tarball/' + PACKAGE_VERSION
+    'https://github.com/tagexpert/facebook-python-business-sdk/archive/refs/tags/v0.1.tar.gz' + PACKAGE_VERSION
 PACKAGES = [
     'facebook_business',
     'facebook_business.test',

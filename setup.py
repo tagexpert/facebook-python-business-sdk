@@ -34,7 +34,7 @@ PACKAGE_AUTHOR = 'Facebook'
 PACKAGE_AUTHOR_EMAIL = ''
 PACKAGE_URL = 'https://github.com/tagexpert/facebook-python-business-sdk'
 PACKAGE_DOWNLOAD_URL = \
-    'https://github.com/tagexpert/facebook-python-business-sdk/archive/refs/tags/v0.2.tar.gz' + PACKAGE_VERSION
+    'https://github.com/tagexpert/facebook-python-business-sdk/archive/refs/tags/v0.3.tar.gz' + PACKAGE_VERSION
 PACKAGES = [
     'te_fb',
     'te_fb.test',

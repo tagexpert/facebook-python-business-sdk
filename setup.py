@@ -28,7 +28,7 @@ this_dir = os.path.dirname(__file__)
 readme_filename = os.path.join(this_dir, 'README.md')
 requirements_filename = os.path.join(this_dir, 'requirements.txt')
 
-PACKAGE_NAME = 'facebook_business'
+PACKAGE_NAME = 'etl_tagexpert_fb'
 PACKAGE_VERSION = '15.0.0'
 PACKAGE_AUTHOR = 'Facebook'
 PACKAGE_AUTHOR_EMAIL = ''

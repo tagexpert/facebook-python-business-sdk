@@ -45,7 +45,7 @@ user_data = UserData(
 
 content = Content(product_id="XYZ789", quantity=4, item_price=3.5)
 contents = [content]
-custom_data = CustomData(contents=contents, value=14.0, currency="usd")
+custom_data = CustomData(contents=contents, value=15.0, currency="usd")
 
 event = Event(
     event_name="Purchase",

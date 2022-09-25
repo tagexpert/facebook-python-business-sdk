@@ -18,11 +18,11 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.api import FacebookRequest
-from facebook_business.typechecker import TypeChecker
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.abstractcrudobject import AbstractCrudObject
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.api import FacebookRequest
+from te_fb.typechecker import TypeChecker
 
 """
 This class is auto-generated.
@@ -69,7 +69,7 @@ class CommerceMerchantSettings(
         whatsapp_channel = 'whatsapp_channel'
 
     def api_get(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -99,7 +99,7 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def create_acknowledge_order(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -131,10 +131,10 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_commerce_orders(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.commerceorder import CommerceOrder
+        from te_fb.adobjects.commerceorder import CommerceOrder
         param_types = {
             'filters': 'list<filters_enum>',
             'state': 'list<state_enum>',
@@ -168,10 +168,10 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_commerce_payouts(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.commercepayout import CommercePayout
+        from te_fb.adobjects.commercepayout import CommercePayout
         param_types = {
             'end_time': 'datetime',
             'start_time': 'datetime',
@@ -201,10 +201,10 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_commerce_transactions(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.commerceordertransactiondetail import CommerceOrderTransactionDetail
+        from te_fb.adobjects.commerceordertransactiondetail import CommerceOrderTransactionDetail
         param_types = {
             'end_time': 'datetime',
             'payout_reference_id': 'string',
@@ -235,10 +235,10 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_order_management_apps(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.application import Application
+        from te_fb.adobjects.application import Application
         param_types = {
         }
         enums = {
@@ -266,7 +266,7 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def create_order_management_app(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -296,10 +296,10 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_product_catalogs(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.productcatalog import ProductCatalog
+        from te_fb.adobjects.productcatalog import ProductCatalog
         param_types = {
         }
         enums = {
@@ -327,7 +327,7 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_returns(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -368,10 +368,10 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_setup_status(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.commercemerchantsettingssetupstatus import CommerceMerchantSettingsSetupStatus
+        from te_fb.adobjects.commercemerchantsettingssetupstatus import CommerceMerchantSettingsSetupStatus
         param_types = {
         }
         enums = {
@@ -399,7 +399,7 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_shipping_profiles(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -430,7 +430,7 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def create_shipping_profile(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -466,10 +466,10 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_shops(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.shop import Shop
+        from te_fb.adobjects.shop import Shop
         param_types = {
         }
         enums = {
@@ -497,7 +497,7 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def get_tax_settings(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -527,7 +527,7 @@ class CommerceMerchantSettings(
             return request.execute()
 
     def create_whatsapp_channel(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {

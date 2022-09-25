@@ -19,8 +19,8 @@
 # DEALINGS IN THE SOFTWARE.
 
 import warnings
-from facebook_business import apiconfig
-from facebook_business.exceptions import FacebookBadObjectError
+from te_fb import apiconfig
+from te_fb.exceptions import FacebookBadObjectError
 
 
 def warning(message):

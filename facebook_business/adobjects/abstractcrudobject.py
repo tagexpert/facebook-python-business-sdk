@@ -18,17 +18,17 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.exceptions import (
+from te_fb.exceptions import (
     FacebookBadObjectError,
 )
-from facebook_business.api import (
+from te_fb.api import (
     FacebookAdsApi,
     Cursor,
     FacebookRequest,
 )
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.objectparser import ObjectParser
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.objectparser import ObjectParser
 
 import logging
 
@@ -575,7 +575,7 @@ class AbstractCrudObject(AbstractObject):
     def iterate_edge_async(self, target_objects_class, fields=None,
                            params=None, is_async=False, include_summary=True,
                            endpoint=None):
-        from facebook_business.adobjects.adreportrun import AdReportRun
+        from te_fb.adobjects.adreportrun import AdReportRun
         """
         Behaves as iterate_edge(...) if parameter is_async if False
         (Default value)

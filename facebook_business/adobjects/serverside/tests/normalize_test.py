@@ -21,7 +21,7 @@
 from unittest import TestCase
 import hashlib
 
-from facebook_business.adobjects.serverside.normalize import Normalize
+from te_fb.adobjects.serverside.normalize import Normalize
 
 
 class NormalizeTest(TestCase):

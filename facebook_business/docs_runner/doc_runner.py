@@ -26,15 +26,15 @@ import os
 import traceback
 import re
 
-# Use facebook_business SDK from this repo instead of the one installed via pip
+# Use te_fb SDK from this repo instead of the one installed via pip
 this_dir = os.path.dirname(__file__)
 repo_dir = os.path.join(this_dir, os.pardir, os.pardir)
 sys.path.insert(1, repo_dir)
 
-from facebook_business.api import FacebookAdsApi
-from facebook_business.exit_codes import ExitCodesEnum
-from facebook_business.exceptions import FacebookRequestError
-from facebook_business.exceptions import DocsmithSkipTestError
+from te_fb.api import FacebookAdsApi
+from te_fb.exit_codes import ExitCodesEnum
+from te_fb.exceptions import FacebookRequestError
+from te_fb.exceptions import DocsmithSkipTestError
 
 if __name__ == '__main__':
     files_to_run = sys.argv[1:]

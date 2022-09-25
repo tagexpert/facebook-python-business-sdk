@@ -18,11 +18,11 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.adaccount import AdAccount
-from facebook_business.adobjects.page import Page
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.api import FacebookRequest
-from facebook_business.typechecker import TypeChecker
+from te_fb.adobjects.adaccount import AdAccount
+from te_fb.adobjects.page import Page
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.api import FacebookRequest
+from te_fb.typechecker import TypeChecker
 
 class AdAccountUserMixin:
 

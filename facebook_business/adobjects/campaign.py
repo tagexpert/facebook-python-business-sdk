@@ -18,13 +18,13 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.api import FacebookRequest
-from facebook_business.typechecker import TypeChecker
-from facebook_business.mixins import HasAdLabels
-from facebook_business.mixins import CanValidate
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.abstractcrudobject import AbstractCrudObject
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.api import FacebookRequest
+from te_fb.typechecker import TypeChecker
+from te_fb.mixins import HasAdLabels
+from te_fb.mixins import CanValidate
 
 """
 This class is auto-generated.
@@ -445,11 +445,11 @@ class Campaign(
 
     # @deprecated api_create is being deprecated
     def api_create(self, parent_id, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.adobjects.adaccount import AdAccount
+        from te_fb.adobjects.adaccount import AdAccount
         return AdAccount(api=self._api, fbid=parent_id).create_campaign(fields, params, batch, success, failure, pending)
 
     def api_delete(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -479,7 +479,7 @@ class Campaign(
             return request.execute()
 
     def api_get(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -535,7 +535,7 @@ class Campaign(
             return request.execute()
 
     def api_update(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -596,10 +596,10 @@ class Campaign(
             return request.execute()
 
     def get_ad_studies(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adstudy import AdStudy
+        from te_fb.adobjects.adstudy import AdStudy
         param_types = {
         }
         enums = {
@@ -627,7 +627,7 @@ class Campaign(
             return request.execute()
 
     def create_ad_label(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -660,10 +660,10 @@ class Campaign(
             return request.execute()
 
     def get_ad_rules_governed(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adrule import AdRule
+        from te_fb.adobjects.adrule import AdRule
         param_types = {
             'pass_evaluation': 'bool',
         }
@@ -692,10 +692,10 @@ class Campaign(
             return request.execute()
 
     def get_ads(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.ad import Ad
+        from te_fb.adobjects.ad import Ad
         param_types = {
             'date_preset': 'date_preset_enum',
             'effective_status': 'list<string>',
@@ -728,10 +728,10 @@ class Campaign(
             return request.execute()
 
     def get_ad_sets(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adset import AdSet
+        from te_fb.adobjects.adset import AdSet
         param_types = {
             'date_preset': 'date_preset_enum',
             'effective_status': 'list<effective_status_enum>',
@@ -765,10 +765,10 @@ class Campaign(
             return request.execute()
 
     def get_content_delivery_report(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.contentdeliveryreport import ContentDeliveryReport
+        from te_fb.adobjects.contentdeliveryreport import ContentDeliveryReport
         param_types = {
             'end_date': 'datetime',
             'page_id': 'unsigned int',
@@ -804,7 +804,7 @@ class Campaign(
             return request.execute()
 
     def get_copies(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -840,7 +840,7 @@ class Campaign(
             return request.execute()
 
     def create_copy(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -876,10 +876,10 @@ class Campaign(
             return request.execute()
 
     def get_insights(self, fields=None, params=None, is_async=False, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adsinsights import AdsInsights
+        from te_fb.adobjects.adsinsights import AdsInsights
         if is_async:
           return self.get_insights_async(fields, params, batch, success, failure, pending)
         param_types = {
@@ -938,11 +938,11 @@ class Campaign(
             return request.execute()
 
     def get_insights_async(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adreportrun import AdReportRun
-        from facebook_business.adobjects.adsinsights import AdsInsights
+        from te_fb.adobjects.adreportrun import AdReportRun
+        from te_fb.adobjects.adsinsights import AdsInsights
         param_types = {
             'action_attribution_windows': 'list<action_attribution_windows_enum>',
             'action_breakdowns': 'list<action_breakdowns_enum>',

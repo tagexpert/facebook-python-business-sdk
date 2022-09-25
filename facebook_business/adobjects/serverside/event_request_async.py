@@ -18,14 +18,14 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.serverside.util import Util
+from te_fb.adobjects.serverside.util import Util
 if not Util.async_requests_available():
     raise Exception('EventRequestAsync requires Python >= 3.5.3')
 
-from facebook_business.adobjects.serverside.event_request import EventRequest
-from facebook_business.adobjects.serverside.event_response import EventResponse
-from facebook_business.api import FacebookAdsApi
-from facebook_business.session import FacebookSession
+from te_fb.adobjects.serverside.event_request import EventRequest
+from te_fb.adobjects.serverside.event_response import EventResponse
+from te_fb.api import FacebookAdsApi
+from te_fb.session import FacebookSession
 
 import aiohttp
 import json

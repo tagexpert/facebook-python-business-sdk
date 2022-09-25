@@ -19,9 +19,9 @@
 # DEALINGS IN THE SOFTWARE.
 
 import base64
-from facebook_business.api import FacebookAdsApi
-from facebook_business.session import FacebookSession
-from facebook_business.exceptions import FacebookError
+from te_fb.api import FacebookAdsApi
+from te_fb.session import FacebookSession
+from te_fb.exceptions import FacebookError
 
 class ProductCatalogMixin:
 

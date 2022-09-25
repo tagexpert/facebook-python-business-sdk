@@ -26,10 +26,10 @@ repo_dir = os.path.join(this_dir, os.pardir)
 sys.path.insert(1, repo_dir)
 
 import json
-from facebook_business.session import FacebookSession
-from facebook_business.api import FacebookAdsApi
-from facebook_business.adobjects import *
-from facebook_business.exceptions import FacebookError
+from te_fb.session import FacebookSession
+from te_fb.api import FacebookAdsApi
+from te_fb.adobjects import *
+from te_fb.exceptions import FacebookError
 
 
 class Authentication():

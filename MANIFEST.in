@@ -20,4 +20,4 @@
 
 include *.txt *.md *.py
 recursive-include examples *.png *.py *.dist
-recursive-include facebook_business *.py *.crt *.png
+recursive-include te_fb *.py *.crt *.png

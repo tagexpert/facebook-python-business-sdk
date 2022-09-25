@@ -18,8 +18,8 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.helpers.adpreviewmixin import AdPreviewMixin
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.helpers.adpreviewmixin import AdPreviewMixin
 
 """
 This class is auto-generated.

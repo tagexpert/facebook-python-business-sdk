@@ -18,14 +18,14 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.serverside.util import Util
+from te_fb.adobjects.serverside.util import Util
 
 if Util.async_requests_available():
 
-    from facebook_business.adobjects.serverside.batch_processor import BatchProcessor
-    from facebook_business.adobjects.serverside.event import Event
-    from facebook_business.adobjects.serverside.event_request_async import EventRequestAsync
-    from facebook_business.adobjects.serverside.event_response import EventResponse
+    from te_fb.adobjects.serverside.batch_processor import BatchProcessor
+    from te_fb.adobjects.serverside.event import Event
+    from te_fb.adobjects.serverside.event_request_async import EventRequestAsync
+    from te_fb.adobjects.serverside.event_response import EventResponse
 
     from unittest import TestCase
     from unittest.mock import patch, AsyncMock, Mock
@@ -33,7 +33,7 @@ if Util.async_requests_available():
     import asyncio
 
     class BatchProcessorTests(TestCase):
-        @patch('facebook_business.adobjects.serverside.batch_processor.BatchProcessor.process_event_requests_generator')
+        @patch('te_fb.adobjects.serverside.batch_processor.BatchProcessor.process_event_requests_generator')
         def test_process_event_requests(self, mock_process_event_requests_generator):
             event_requests_async = self.get_event_requests_async(8)
             batch_processor = BatchProcessor(2, 3)
@@ -61,7 +61,7 @@ if Util.async_requests_available():
 
             asyncio.run(async_test())
 
-        @patch('facebook_business.adobjects.serverside.batch_processor.BatchProcessor.process_events_generator')
+        @patch('te_fb.adobjects.serverside.batch_processor.BatchProcessor.process_events_generator')
         def test_process_events(self, mock_process_events_generator):
             event_request_to_clone = EventRequestAsync('pixel123', events=[Mock(Event)])
             events = [Mock(Event)] * 7
@@ -70,7 +70,7 @@ if Util.async_requests_available():
 
             mock_process_events_generator.assert_called_with(event_request_to_clone, events)
 
-        @patch('facebook_business.adobjects.serverside.event_request_async.EventRequestAsync.execute')
+        @patch('te_fb.adobjects.serverside.event_request_async.EventRequestAsync.execute')
         def test_process_events_generator(self, execute_async_mock):
             async def async_test():
                 self.num = 0

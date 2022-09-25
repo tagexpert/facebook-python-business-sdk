@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.serverside.util import Util
+from te_fb.adobjects.serverside.util import Util
 if not Util.async_requests_available():
     raise Exception('BatchProcessor requires Python >= 3.5.3')
 

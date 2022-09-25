@@ -24,9 +24,9 @@ this_dir = os.path.dirname(__file__)
 repo_dir = os.path.join(this_dir, os.pardir)
 sys.path.insert(1, repo_dir)
 
-from facebook_business.adobjects.adaccount import AdAccount
-from facebook_business.adobjects.adreportrun import AdReportRun
-from facebook_business.api import FacebookAdsApi
+from te_fb.adobjects.adaccount import AdAccount
+from te_fb.adobjects.adreportrun import AdReportRun
+from te_fb.api import FacebookAdsApi
 import time
 import os
 import json

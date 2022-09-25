@@ -22,7 +22,7 @@
 Unit tests for the Python Facebook Business SDK.
 
 How to run:
-    python -m facebook_business.test.other_docs
+    python -m te_fb.test.other_docs
 '''
 
 import os

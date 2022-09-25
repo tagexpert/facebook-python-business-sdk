@@ -21,8 +21,8 @@
 import pprint
 import six
 
-from facebook_business.adobjects.serverside.gender import Gender
-from facebook_business.adobjects.serverside.normalize import Normalize
+from te_fb.adobjects.serverside.gender import Gender
+from te_fb.adobjects.serverside.normalize import Normalize
 
 
 class UserData(object):

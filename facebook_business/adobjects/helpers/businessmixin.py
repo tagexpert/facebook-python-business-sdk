@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.adsinsights import AdsInsights
+from te_fb.adobjects.adsinsights import AdsInsights
 
 class BusinessMixin:
 

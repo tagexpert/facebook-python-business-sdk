@@ -22,14 +22,14 @@ import json
 import pprint
 import six
 
-from facebook_business import FacebookAdsApi
-from facebook_business.adobjects.adspixel import AdsPixel
-from facebook_business.adobjects.serverside.event import Event
-from facebook_business.adobjects.serverside.event_response import EventResponse
-from facebook_business.adobjects.serverside.http_method import HttpMethod
-from facebook_business.adobjects.serverside.request_options import RequestOptions
-from facebook_business.adobjects.serverside.util import Util
-from facebook_business.session import FacebookSession
+from te_fb import FacebookAdsApi
+from te_fb.adobjects.adspixel import AdsPixel
+from te_fb.adobjects.serverside.event import Event
+from te_fb.adobjects.serverside.event_response import EventResponse
+from te_fb.adobjects.serverside.http_method import HttpMethod
+from te_fb.adobjects.serverside.request_options import RequestOptions
+from te_fb.adobjects.serverside.util import Util
+from te_fb.session import FacebookSession
 
 
 class EventRequest(object):

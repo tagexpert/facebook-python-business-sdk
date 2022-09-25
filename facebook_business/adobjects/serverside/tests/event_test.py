@@ -20,11 +20,11 @@
 
 from unittest import TestCase
 
-from facebook_business import FacebookAdsApi
-from facebook_business.adobjects.serverside.action_source import ActionSource
-from facebook_business.adobjects.serverside.custom_data import CustomData
-from facebook_business.adobjects.serverside.event import Event
-from facebook_business.adobjects.serverside.user_data import UserData
+from te_fb import FacebookAdsApi
+from te_fb.adobjects.serverside.action_source import ActionSource
+from te_fb.adobjects.serverside.custom_data import CustomData
+from te_fb.adobjects.serverside.event import Event
+from te_fb.adobjects.serverside.user_data import UserData
 
 
 class EventTest(TestCase):

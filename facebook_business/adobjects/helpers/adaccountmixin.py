@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects import agencyclientdeclaration
+from te_fb.adobjects import agencyclientdeclaration
 
 class AdAccountMixin:
     class AccountStatus(object):
@@ -48,7 +48,7 @@ class AdAccountMixin:
 
     @classmethod
     def get_my_account(cls, api=None):
-        from facebook_business.adobjects.adaccountuser import AdAccountUser
+        from te_fb.adobjects.adaccountuser import AdAccountUser
         """Returns first AdAccount associated with 'me' given api instance."""
         # Setup user and read the object from the server
         me = AdAccountUser(fbid='me', api=api)
@@ -64,7 +64,7 @@ class AdAccountMixin:
                                     is_raw=False,
                                     app_ids=None,
                                     pre_hashed=None):
-        from facebook_business.adobjects.customaudience import CustomAudience
+        from te_fb.adobjects.customaudience import CustomAudience
         """Opts out users from being targeted by this ad account.
 
         Args:

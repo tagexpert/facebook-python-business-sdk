@@ -18,17 +18,17 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.session import FacebookSession
-from facebook_business import apiconfig
+from te_fb.session import FacebookSession
+from te_fb import apiconfig
 
-from facebook_business.exceptions import (
+from te_fb.exceptions import (
     FacebookRequestError,
     FacebookBadObjectError,
     FacebookUnavailablePropertyException,
     FacebookBadParameterError,
 )
-from facebook_business.utils import api_utils
-from facebook_business.utils import urls
+from te_fb.utils import api_utils
+from te_fb.utils import urls
 
 from contextlib import contextmanager
 import copy
@@ -45,8 +45,8 @@ except ImportError:
   # Won't work after python 3.8
   import collections as collections_abc
 
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.typechecker import TypeChecker
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.typechecker import TypeChecker
 
 
 """
@@ -211,7 +211,7 @@ class FacebookAdsApi(object):
             cls.set_default_account_id(account_id)
 
         if crash_log:
-            from facebook_business.crashreporter import CrashReporter
+            from te_fb.crashreporter import CrashReporter
             if debug:
                 CrashReporter.enableLogging()
             CrashReporter.enable()

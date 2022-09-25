@@ -23,8 +23,8 @@ import importlib
 import os
 import six
 
-from facebook_business.utils import api_utils
-from facebook_business.exceptions import(
+from te_fb.utils import api_utils
+from te_fb.exceptions import(
     FacebookBadParameterTypeException,
 )
 
@@ -199,7 +199,7 @@ class TypeChecker:
 
     def _create_field_object(self, field_type, data=None):
         mod = importlib.import_module(
-            "facebook_business.adobjects." + field_type.lower())
+            "te_fb.adobjects." + field_type.lower())
         if mod is not None and hasattr(mod, field_type):
             obj = (getattr(mod, field_type))()
             if data is not None:
@@ -210,7 +210,7 @@ class TypeChecker:
     def _type_is_ad_object(self, value_type):
         try:
             mod = importlib.import_module(
-                "facebook_business.adobjects." + value_type.lower())
+                "te_fb.adobjects." + value_type.lower())
             return mod is not None
         except:
             return False

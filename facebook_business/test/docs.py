@@ -22,8 +22,8 @@
 Unit tests for the Python Facebook Business SDK.
 
 How to run:
-    python -m facebook_business.test.docs
-    python -m facebook_business.test.docs -v AdGroupDocsTestCase
+    python -m te_fb.test.docs
+    python -m te_fb.test.docs -v AdGroupDocsTestCase
 '''
 
 import os

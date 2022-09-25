@@ -18,8 +18,8 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.session import FacebookSession
-from facebook_business.api import FacebookAdsApi
+from te_fb.session import FacebookSession
+from te_fb.api import FacebookAdsApi
 
 __version__ = '15.0.0'
 __all__ = [

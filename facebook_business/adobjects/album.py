@@ -18,11 +18,11 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.api import FacebookRequest
-from facebook_business.typechecker import TypeChecker
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.abstractcrudobject import AbstractCrudObject
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.api import FacebookRequest
+from te_fb.typechecker import TypeChecker
 
 """
 This class is auto-generated.
@@ -66,7 +66,7 @@ class Album(
         video_count = 'video_count'
 
     def api_get(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -96,10 +96,10 @@ class Album(
             return request.execute()
 
     def get_comments(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.comment import Comment
+        from te_fb.adobjects.comment import Comment
         param_types = {
             'filter': 'filter_enum',
             'live_filter': 'live_filter_enum',
@@ -134,10 +134,10 @@ class Album(
             return request.execute()
 
     def create_comment(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.comment import Comment
+        from te_fb.adobjects.comment import Comment
         param_types = {
             'attachment_id': 'string',
             'attachment_share_url': 'string',
@@ -179,10 +179,10 @@ class Album(
             return request.execute()
 
     def get_likes(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.profile import Profile
+        from te_fb.adobjects.profile import Profile
         param_types = {
         }
         enums = {
@@ -210,7 +210,7 @@ class Album(
             return request.execute()
 
     def create_like(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -244,10 +244,10 @@ class Album(
             return request.execute()
 
     def get_photos(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.photo import Photo
+        from te_fb.adobjects.photo import Photo
         param_types = {
         }
         enums = {
@@ -275,10 +275,10 @@ class Album(
             return request.execute()
 
     def create_photo(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.photo import Photo
+        from te_fb.adobjects.photo import Photo
         param_types = {
             'aid': 'string',
             'allow_spherical_photo': 'bool',
@@ -359,10 +359,10 @@ class Album(
             return request.execute()
 
     def get_picture(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.profilepicturesource import ProfilePictureSource
+        from te_fb.adobjects.profilepicturesource import ProfilePictureSource
         param_types = {
             'redirect': 'bool',
             'type': 'type_enum',

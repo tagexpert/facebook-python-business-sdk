@@ -24,9 +24,9 @@ Requires: the Facebook Python Ads SDK
 https://github.com/facebook/facebook-python-ads-sdk
 """
 
-from facebook_business import FacebookAdsApi
-from facebook_business.adobjects.adaccount import AdAccount
-from facebook_business.adobjects.customaudience import CustomAudience
+from te_fb import FacebookAdsApi
+from te_fb.adobjects.adaccount import AdAccount
+from te_fb.adobjects.customaudience import CustomAudience
 import argparse
 import json
 import os

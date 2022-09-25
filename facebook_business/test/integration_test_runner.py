@@ -26,12 +26,12 @@ Note:
     for example, integration_adset.py.
 
 How to run:
-    python -m facebook_business.test.integration_test_runner
+    python -m te_fb.test.integration_test_runner
 '''
 import os, subprocess
 
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
-COMMEND_BASE = "python -m facebook_business.test."
+COMMEND_BASE = "python -m te_fb.test."
 # test will run under release folder
 RELEASE_PATH = DIRECTORY + "/../../"
 

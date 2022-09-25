@@ -22,7 +22,7 @@
 Unit tests for the Python Facebook Business SDK.
 
 How to run:
-    python -m facebook_business.test.unit
+    python -m te_fb.test.unit
 '''
 
 import unittest
@@ -38,13 +38,13 @@ from .. import specs
 from .. import exceptions
 from .. import session
 from .. import utils
-from facebook_business.adobjects import (abstractcrudobject,
+from te_fb.adobjects import (abstractcrudobject,
                                    ad,
                                    adaccount,
                                    adcreative,
                                    customaudience,
                                    productcatalog)
-from facebook_business.utils import version
+from te_fb.utils import version
 
 
 class CustomAudienceTestCase(unittest.TestCase):

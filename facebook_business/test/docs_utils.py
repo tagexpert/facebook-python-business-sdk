@@ -185,7 +185,7 @@ class DocsTestCase(unittest.TestCase):
 
     def create_image(self):
         image = AdImage(parent_id=DocsDataStore.get('adaccount_id'))
-        image['filename'] = './facebook_business/test/misc/image.png'
+        image['filename'] = './te_fb/test/misc/image.png'
         image.remote_create()
         return image
 

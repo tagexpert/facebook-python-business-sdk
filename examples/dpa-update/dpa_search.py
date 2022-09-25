@@ -33,9 +33,9 @@ config_file = open(config_filename)
 config = json.load(config_file)
 config_file.close()
 
-from facebook_business.api import FacebookAdsApi
-from facebook_business.adobjects.productcatalog import ProductCatalog
-from facebook_business.adobjects.productitem import ProductItem
+from te_fb.api import FacebookAdsApi
+from te_fb.adobjects.productcatalog import ProductCatalog
+from te_fb.adobjects.productitem import ProductItem
 
 FacebookAdsApi.init(
     config['app_id'],

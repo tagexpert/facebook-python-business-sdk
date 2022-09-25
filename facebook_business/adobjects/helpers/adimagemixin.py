@@ -18,10 +18,10 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.adaccount import AdAccount
-from facebook_business.api import FacebookAdsApi
-from facebook_business.exceptions import FacebookBadObjectError
-from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
+from te_fb.adobjects.adaccount import AdAccount
+from te_fb.api import FacebookAdsApi
+from te_fb.exceptions import FacebookBadObjectError
+from te_fb.adobjects.abstractcrudobject import AbstractCrudObject
 
 class AdImageMixin:
     @classmethod

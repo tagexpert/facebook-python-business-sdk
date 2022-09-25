@@ -22,7 +22,7 @@
 mixins contains attributes that objects share
 """
 
-from facebook_business.exceptions import FacebookBadObjectError
+from te_fb.exceptions import FacebookBadObjectError
 
 # @deprecated CanValidate is being deprecated
 class CanValidate(object):

@@ -23,19 +23,19 @@ import time
 from unittest import TestCase
 from unittest.mock import patch, Mock
 
-from facebook_business import FacebookAdsApi
-from facebook_business.adobjects.serverside.event import Event
-from facebook_business.adobjects.serverside.event_request import EventRequest
-from facebook_business.adobjects.serverside.event_response import EventResponse
-from facebook_business.adobjects.serverside.http_method import HttpMethod
-from facebook_business.adobjects.serverside.http_service_interface import HttpServiceInterface
-from facebook_business.adobjects.serverside.request_options import RequestOptions
-from facebook_business.adobjects.serverside.util import Util
-from facebook_business.session import FacebookSession
+from te_fb import FacebookAdsApi
+from te_fb.adobjects.serverside.event import Event
+from te_fb.adobjects.serverside.event_request import EventRequest
+from te_fb.adobjects.serverside.event_response import EventResponse
+from te_fb.adobjects.serverside.http_method import HttpMethod
+from te_fb.adobjects.serverside.http_service_interface import HttpServiceInterface
+from te_fb.adobjects.serverside.request_options import RequestOptions
+from te_fb.adobjects.serverside.util import Util
+from te_fb.session import FacebookSession
 
 
 class EventRequestTest(TestCase):
-    @patch('facebook_business.adobjects.serverside.event_request.AdsPixel')
+    @patch('te_fb.adobjects.serverside.event_request.AdsPixel')
     def test_constructor(self, pixel_mock):
         event = Event(event_name='Purchase', event_time=int(time.time()))
         expected_event = json.dumps(

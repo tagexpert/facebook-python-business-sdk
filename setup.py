@@ -36,16 +36,16 @@ PACKAGE_URL = 'https://github.com/tagexpert/facebook-python-business-sdk'
 PACKAGE_DOWNLOAD_URL = \
     'https://github.com/tagexpert/facebook-python-business-sdk/archive/refs/tags/v0.2.tar.gz' + PACKAGE_VERSION
 PACKAGES = [
-    'facebook_business',
-    'facebook_business.test',
-    'facebook_business.utils',
-    'facebook_business.adobjects',
-    'facebook_business.adobjects.helpers',
-    'facebook_business.adobjects.serverside',
+    'te_fb',
+    'te_fb.test',
+    'te_fb.utils',
+    'te_fb.adobjects',
+    'te_fb.adobjects.helpers',
+    'te_fb.adobjects.serverside',
 ]
 PACKAGE_DATA = {
-    'facebook_business': ['*.crt'],
-    'facebook_business.test': ['*.jpg']
+    'te_fb': ['*.crt'],
+    'te_fb.test': ['*.jpg']
 }
 PACKAGE_LICENSE = 'LICENSE.txt'
 PACKAGE_DESCRIPTION = 'Facebook Business SDK'

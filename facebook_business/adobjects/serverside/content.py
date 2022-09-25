@@ -21,7 +21,7 @@
 import pprint
 import six
 
-from facebook_business.adobjects.serverside.delivery_category import DeliveryCategory
+from te_fb.adobjects.serverside.delivery_category import DeliveryCategory
 
 class Content(object):
     """

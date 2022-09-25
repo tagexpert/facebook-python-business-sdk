@@ -20,13 +20,13 @@
 
 import time
 
-from facebook_business.adobjects.serverside.content import Content
-from facebook_business.adobjects.serverside.custom_data import CustomData
-from facebook_business.adobjects.serverside.event import Event
-from facebook_business.adobjects.serverside.event_request import EventRequest
-from facebook_business.adobjects.serverside.gender import Gender
-from facebook_business.adobjects.serverside.user_data import UserData
-from facebook_business.api import FacebookAdsApi
+from te_fb.adobjects.serverside.content import Content
+from te_fb.adobjects.serverside.custom_data import CustomData
+from te_fb.adobjects.serverside.event import Event
+from te_fb.adobjects.serverside.event_request import EventRequest
+from te_fb.adobjects.serverside.gender import Gender
+from te_fb.adobjects.serverside.user_data import UserData
+from te_fb.api import FacebookAdsApi
 
 
 # Configuration.

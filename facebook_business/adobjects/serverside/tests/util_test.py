@@ -21,14 +21,14 @@
 from unittest import TestCase
 from unittest.mock import PropertyMock, patch
 
-from facebook_business.adobjects.serverside.util import Util, sys
+from te_fb.adobjects.serverside.util import Util, sys
 
 import hashlib
 import hmac
 import os
 
 class UtilTest(TestCase):
-    @patch('facebook_business.adobjects.serverside.util.sys')
+    @patch('te_fb.adobjects.serverside.util.sys')
     def test_async_requests_available(self, mock_sys):
         type(mock_sys).version_info = PropertyMock(return_value=(3, 7))
         self.assertTrue(Util.async_requests_available())

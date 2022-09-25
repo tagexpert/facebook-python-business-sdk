@@ -22,8 +22,8 @@
 video uploader that is used to upload video to adaccount
 """
 
-from facebook_business.exceptions import FacebookError
-from facebook_business.exceptions import FacebookRequestError
+from te_fb.exceptions import FacebookError
+from te_fb.exceptions import FacebookRequestError
 from abc import ABCMeta, abstractmethod
 
 import os

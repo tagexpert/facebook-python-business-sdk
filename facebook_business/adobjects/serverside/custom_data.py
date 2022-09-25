@@ -21,9 +21,9 @@
 import pprint
 import six
 
-from facebook_business.adobjects.serverside.content import Content
-from facebook_business.adobjects.serverside.normalize import Normalize
-from facebook_business.adobjects.serverside.delivery_category import DeliveryCategory
+from te_fb.adobjects.serverside.content import Content
+from te_fb.adobjects.serverside.normalize import Normalize
+from te_fb.adobjects.serverside.delivery_category import DeliveryCategory
 
 class CustomData(object):
     """

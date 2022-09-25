@@ -20,9 +20,9 @@
 
 from unittest import TestCase
 
-from facebook_business.adobjects.serverside.user_data import UserData
-from facebook_business.adobjects.serverside.normalize import Normalize
-from facebook_business.adobjects.serverside.gender import Gender
+from te_fb.adobjects.serverside.user_data import UserData
+from te_fb.adobjects.serverside.normalize import Normalize
+from te_fb.adobjects.serverside.gender import Gender
 
 
 class UserDataTest(TestCase):

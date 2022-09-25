@@ -26,6 +26,6 @@ this_dir = os.path.dirname(__file__)
 repo_dir = os.path.join(this_dir, os.pardir, os.pardir)
 sys.path.insert(1, repo_dir)
 
-from facebook_business.utils import version
+from te_fb.utils import version
 
 print('v' + str(re.sub('^(\d+\.\d+)\.\d+$', '\g<1>', version.get_version())))

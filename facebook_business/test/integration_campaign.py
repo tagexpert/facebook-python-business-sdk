@@ -22,17 +22,17 @@
 Unit tests for the Python Facebook Business SDK.
 
 How to run:
-    python -m facebook_business.test.integration_campaign
+    python -m te_fb.test.integration_campaign
 '''
 
 import warnings
 import json
-from facebook_business.session import FacebookSession
-from facebook_business.exceptions import FacebookRequestError
-from facebook_business.api import FacebookAdsApi, FacebookRequest, FacebookResponse
-from facebook_business.adobjects.campaign import Campaign
-from facebook_business.adobjects.adaccount import AdAccount
-from facebook_business.adobjects.adpromotedobject import AdPromotedObject
+from te_fb.session import FacebookSession
+from te_fb.exceptions import FacebookRequestError
+from te_fb.api import FacebookAdsApi, FacebookRequest, FacebookResponse
+from te_fb.adobjects.campaign import Campaign
+from te_fb.adobjects.adaccount import AdAccount
+from te_fb.adobjects.adpromotedobject import AdPromotedObject
 from .integration_utils import *
 from .integration_constant import *
 

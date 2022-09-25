@@ -28,9 +28,9 @@ import os
 sdk_path = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 sys.path.insert(1, sdk_path)
 
-from facebook_business import FacebookSession
-from facebook_business import FacebookAdsApi
-from facebook_business.adobjects.advideo import AdVideo
+from te_fb import FacebookSession
+from te_fb import FacebookAdsApi
+from te_fb.adobjects.advideo import AdVideo
 
 config_filename = os.path.join(sdk_path, './config.json')
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     video_path = os.path.join(
         os.path.dirname(__file__),
         os.pardir,
-        'facebook_business/test/misc/video.mp4'
+        'te_fb/test/misc/video.mp4'
     )
 
     # set video fields

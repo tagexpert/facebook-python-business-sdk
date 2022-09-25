@@ -18,11 +18,11 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.api import FacebookRequest
-from facebook_business.typechecker import TypeChecker
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.abstractcrudobject import AbstractCrudObject
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.api import FacebookRequest
+from te_fb.typechecker import TypeChecker
 
 """
 This class is auto-generated.
@@ -126,7 +126,7 @@ class LiveVideo(
         regenerate = 'REGENERATE'
 
     def api_delete(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -156,7 +156,7 @@ class LiveVideo(
             return request.execute()
 
     def api_get(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -187,7 +187,7 @@ class LiveVideo(
             return request.execute()
 
     def api_update(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -251,10 +251,10 @@ class LiveVideo(
             return request.execute()
 
     def get_blocked_users(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.user import User
+        from te_fb.adobjects.user import User
         param_types = {
             'uid': 'Object',
         }
@@ -283,10 +283,10 @@ class LiveVideo(
             return request.execute()
 
     def get_comments(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.comment import Comment
+        from te_fb.adobjects.comment import Comment
         param_types = {
             'filter': 'filter_enum',
             'live_filter': 'live_filter_enum',
@@ -321,10 +321,10 @@ class LiveVideo(
             return request.execute()
 
     def get_crosspost_shared_pages(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.page import Page
+        from te_fb.adobjects.page import Page
         param_types = {
         }
         enums = {
@@ -352,7 +352,7 @@ class LiveVideo(
             return request.execute()
 
     def get_crossposted_broadcasts(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -382,10 +382,10 @@ class LiveVideo(
             return request.execute()
 
     def get_errors(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.livevideoerror import LiveVideoError
+        from te_fb.adobjects.livevideoerror import LiveVideoError
         param_types = {
         }
         enums = {
@@ -413,10 +413,10 @@ class LiveVideo(
             return request.execute()
 
     def create_input_stream(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.livevideoinputstream import LiveVideoInputStream
+        from te_fb.adobjects.livevideoinputstream import LiveVideoInputStream
         param_types = {
         }
         enums = {
@@ -444,10 +444,10 @@ class LiveVideo(
             return request.execute()
 
     def get_polls(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.videopoll import VideoPoll
+        from te_fb.adobjects.videopoll import VideoPoll
         param_types = {
         }
         enums = {
@@ -475,10 +475,10 @@ class LiveVideo(
             return request.execute()
 
     def create_poll(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.videopoll import VideoPoll
+        from te_fb.adobjects.videopoll import VideoPoll
         param_types = {
             'close_after_voting': 'bool',
             'correct_option': 'unsigned int',
@@ -513,10 +513,10 @@ class LiveVideo(
             return request.execute()
 
     def get_reactions(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.profile import Profile
+        from te_fb.adobjects.profile import Profile
         param_types = {
             'type': 'type_enum',
         }

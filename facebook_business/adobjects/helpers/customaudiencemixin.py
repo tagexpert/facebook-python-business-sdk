@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.exceptions import FacebookBadObjectError
+from te_fb.exceptions import FacebookBadObjectError
 
 import hashlib
 import six

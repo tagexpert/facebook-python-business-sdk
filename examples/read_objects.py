@@ -22,10 +22,10 @@
 Prints account permissions and campaign statistics.
 """
 
-from facebook_business import FacebookSession
-from facebook_business import FacebookAdsApi
-from facebook_business.adobjects.campaign import Campaign as AdCampaign
-from facebook_business.adobjects.adaccountuser import AdAccountUser as AdUser
+from te_fb import FacebookSession
+from te_fb import FacebookAdsApi
+from te_fb.adobjects.campaign import Campaign as AdCampaign
+from te_fb.adobjects.adaccountuser import AdAccountUser as AdUser
 
 import json
 import os

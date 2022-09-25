@@ -27,7 +27,7 @@ try:
 except ImportError:
     from mock import patch
 from requests.models import Response
-from facebook_business.api import FacebookAdsApi, FacebookResponse
+from te_fb.api import FacebookAdsApi, FacebookResponse
 
 class IntegrationTestCase(unittest.TestCase):
     mock_response = None

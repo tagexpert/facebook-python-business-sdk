@@ -19,10 +19,10 @@
 # DEALINGS IN THE SOFTWARE.
 
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.api import FacebookAdsApi
-from facebook_business.exceptions import FacebookBadObjectError
-from facebook_business.session import FacebookSession
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.api import FacebookAdsApi
+from te_fb.exceptions import FacebookBadObjectError
+from te_fb.session import FacebookSession
 
 class TargetingSearch(AbstractObject):
 

@@ -18,11 +18,11 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.api import FacebookRequest
-from facebook_business.typechecker import TypeChecker
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.abstractcrudobject import AbstractCrudObject
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.api import FacebookRequest
+from te_fb.typechecker import TypeChecker
 
 """
 This class is auto-generated.
@@ -105,7 +105,7 @@ class User(
         generic = 'generic'
 
     def api_delete(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -135,7 +135,7 @@ class User(
             return request.execute()
 
     def api_get(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -165,7 +165,7 @@ class User(
             return request.execute()
 
     def api_update(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -204,7 +204,7 @@ class User(
             return request.execute()
 
     def delete_access_tokens(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -234,7 +234,7 @@ class User(
             return request.execute()
 
     def create_access_token(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -267,10 +267,10 @@ class User(
             return request.execute()
 
     def get_accounts(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.page import Page
+        from te_fb.adobjects.page import Page
         param_types = {
             'is_place': 'bool',
             'is_promotable': 'bool',
@@ -300,10 +300,10 @@ class User(
             return request.execute()
 
     def create_account(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.page import Page
+        from te_fb.adobjects.page import Page
         param_types = {
             'about': 'string',
             'address': 'string',
@@ -347,10 +347,10 @@ class User(
             return request.execute()
 
     def get_ad_studies(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adstudy import AdStudy
+        from te_fb.adobjects.adstudy import AdStudy
         param_types = {
         }
         enums = {
@@ -378,10 +378,10 @@ class User(
             return request.execute()
 
     def create_ad_study(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adstudy import AdStudy
+        from te_fb.adobjects.adstudy import AdStudy
         param_types = {
             'cells': 'list<Object>',
             'client_business': 'string',
@@ -422,10 +422,10 @@ class User(
             return request.execute()
 
     def get_ad_accounts(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adaccount import AdAccount
+        from te_fb.adobjects.adaccount import AdAccount
         param_types = {
         }
         enums = {
@@ -453,10 +453,10 @@ class User(
             return request.execute()
 
     def get_albums(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.album import Album
+        from te_fb.adobjects.album import Album
         param_types = {
         }
         enums = {
@@ -484,7 +484,7 @@ class User(
             return request.execute()
 
     def create_application(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -515,10 +515,10 @@ class User(
             return request.execute()
 
     def get_app_request_former_recipients(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.apprequestformerrecipient import AppRequestFormerRecipient
+        from te_fb.adobjects.apprequestformerrecipient import AppRequestFormerRecipient
         param_types = {
         }
         enums = {
@@ -546,10 +546,10 @@ class User(
             return request.execute()
 
     def get_app_requests(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.apprequest import AppRequest
+        from te_fb.adobjects.apprequest import AppRequest
         param_types = {
         }
         enums = {
@@ -577,10 +577,10 @@ class User(
             return request.execute()
 
     def get_assigned_ad_accounts(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adaccount import AdAccount
+        from te_fb.adobjects.adaccount import AdAccount
         param_types = {
         }
         enums = {
@@ -608,10 +608,10 @@ class User(
             return request.execute()
 
     def get_assigned_business_asset_groups(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.businessassetgroup import BusinessAssetGroup
+        from te_fb.adobjects.businessassetgroup import BusinessAssetGroup
         param_types = {
             'contained_asset_id': 'string',
         }
@@ -640,10 +640,10 @@ class User(
             return request.execute()
 
     def get_assigned_pages(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.page import Page
+        from te_fb.adobjects.page import Page
         param_types = {
         }
         enums = {
@@ -671,10 +671,10 @@ class User(
             return request.execute()
 
     def get_assigned_product_catalogs(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.productcatalog import ProductCatalog
+        from te_fb.adobjects.productcatalog import ProductCatalog
         param_types = {
         }
         enums = {
@@ -702,10 +702,10 @@ class User(
             return request.execute()
 
     def get_business_users(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.businessuser import BusinessUser
+        from te_fb.adobjects.businessuser import BusinessUser
         param_types = {
         }
         enums = {
@@ -733,7 +733,7 @@ class User(
             return request.execute()
 
     def delete_businesses(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -764,10 +764,10 @@ class User(
             return request.execute()
 
     def get_businesses(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.business import Business
+        from te_fb.adobjects.business import Business
         param_types = {
         }
         enums = {
@@ -795,10 +795,10 @@ class User(
             return request.execute()
 
     def create_business(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.business import Business
+        from te_fb.adobjects.business import Business
         param_types = {
             'child_business_external_id': 'string',
             'email': 'string',
@@ -838,10 +838,10 @@ class User(
             return request.execute()
 
     def get_conversations(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.unifiedthread import UnifiedThread
+        from te_fb.adobjects.unifiedthread import UnifiedThread
         param_types = {
             'folder': 'string',
             'tags': 'list<string>',
@@ -872,10 +872,10 @@ class User(
             return request.execute()
 
     def get_custom_labels(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.pageusermessagethreadlabel import PageUserMessageThreadLabel
+        from te_fb.adobjects.pageusermessagethreadlabel import PageUserMessageThreadLabel
         param_types = {
         }
         enums = {
@@ -903,10 +903,10 @@ class User(
             return request.execute()
 
     def get_events(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.event import Event
+        from te_fb.adobjects.event import Event
         param_types = {
             'include_canceled': 'bool',
             'type': 'type_enum',
@@ -937,10 +937,10 @@ class User(
             return request.execute()
 
     def get_feed(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.post import Post
+        from te_fb.adobjects.post import Post
         param_types = {
             'include_hidden': 'bool',
             'q': 'string',
@@ -974,10 +974,10 @@ class User(
             return request.execute()
 
     def create_feed(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.post import Post
+        from te_fb.adobjects.post import Post
         param_types = {
             'actions': 'Object',
             'adaptive_type': 'string',
@@ -1124,7 +1124,7 @@ class User(
             return request.execute()
 
     def get_friends(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -1155,10 +1155,10 @@ class User(
             return request.execute()
 
     def get_fundraisers(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.fundraiserpersontocharity import FundraiserPersonToCharity
+        from te_fb.adobjects.fundraiserpersontocharity import FundraiserPersonToCharity
         param_types = {
         }
         enums = {
@@ -1186,10 +1186,10 @@ class User(
             return request.execute()
 
     def create_fundraiser(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.fundraiserpersontocharity import FundraiserPersonToCharity
+        from te_fb.adobjects.fundraiserpersontocharity import FundraiserPersonToCharity
         param_types = {
             'charity_id': 'string',
             'cover_photo': 'file',
@@ -1232,10 +1232,10 @@ class User(
             return request.execute()
 
     def create_game_item(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.gameitem import GameItem
+        from te_fb.adobjects.gameitem import GameItem
         param_types = {
             'action': 'action_enum',
             'app_id': 'string',
@@ -1270,7 +1270,7 @@ class User(
             return request.execute()
 
     def create_game_time(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -1306,10 +1306,10 @@ class User(
             return request.execute()
 
     def get_groups(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.group import Group
+        from te_fb.adobjects.group import Group
         param_types = {
             'admin_only': 'bool',
             'parent': 'string',
@@ -1339,10 +1339,10 @@ class User(
             return request.execute()
 
     def get_ids_for_apps(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.useridforapp import UserIDForApp
+        from te_fb.adobjects.useridforapp import UserIDForApp
         param_types = {
             'app': 'int',
         }
@@ -1371,10 +1371,10 @@ class User(
             return request.execute()
 
     def get_ids_for_business(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.useridforapp import UserIDForApp
+        from te_fb.adobjects.useridforapp import UserIDForApp
         param_types = {
             'app': 'int',
         }
@@ -1403,10 +1403,10 @@ class User(
             return request.execute()
 
     def get_ids_for_pages(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.useridforpage import UserIDForPage
+        from te_fb.adobjects.useridforpage import UserIDForPage
         param_types = {
             'page': 'int',
         }
@@ -1435,10 +1435,10 @@ class User(
             return request.execute()
 
     def get_likes(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.page import Page
+        from te_fb.adobjects.page import Page
         param_types = {
             'target_id': 'string',
         }
@@ -1467,10 +1467,10 @@ class User(
             return request.execute()
 
     def get_live_videos(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.livevideo import LiveVideo
+        from te_fb.adobjects.livevideo import LiveVideo
         param_types = {
             'broadcast_status': 'list<broadcast_status_enum>',
             'source': 'source_enum',
@@ -1502,10 +1502,10 @@ class User(
             return request.execute()
 
     def create_live_video(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.livevideo import LiveVideo
+        from te_fb.adobjects.livevideo import LiveVideo
         param_types = {
             'content_tags': 'list<string>',
             'description': 'string',
@@ -1559,10 +1559,10 @@ class User(
             return request.execute()
 
     def get_music(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.page import Page
+        from te_fb.adobjects.page import Page
         param_types = {
             'target_id': 'string',
         }
@@ -1591,7 +1591,7 @@ class User(
             return request.execute()
 
     def create_notification(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -1631,10 +1631,10 @@ class User(
             return request.execute()
 
     def get_payment_transactions(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.paymentenginepayment import PaymentEnginePayment
+        from te_fb.adobjects.paymentenginepayment import PaymentEnginePayment
         param_types = {
         }
         enums = {
@@ -1662,7 +1662,7 @@ class User(
             return request.execute()
 
     def delete_permissions(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -1693,10 +1693,10 @@ class User(
             return request.execute()
 
     def get_permissions(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.permission import Permission
+        from te_fb.adobjects.permission import Permission
         param_types = {
             'permission': 'string',
             'status': 'status_enum',
@@ -1727,10 +1727,10 @@ class User(
             return request.execute()
 
     def get_personal_ad_accounts(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.adaccount import AdAccount
+        from te_fb.adobjects.adaccount import AdAccount
         param_types = {
         }
         enums = {
@@ -1758,10 +1758,10 @@ class User(
             return request.execute()
 
     def get_photos(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.photo import Photo
+        from te_fb.adobjects.photo import Photo
         param_types = {
             'type': 'type_enum',
         }
@@ -1791,10 +1791,10 @@ class User(
             return request.execute()
 
     def create_photo(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.photo import Photo
+        from te_fb.adobjects.photo import Photo
         param_types = {
             'aid': 'string',
             'allow_spherical_photo': 'bool',
@@ -1875,10 +1875,10 @@ class User(
             return request.execute()
 
     def get_picture(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.profilepicturesource import ProfilePictureSource
+        from te_fb.adobjects.profilepicturesource import ProfilePictureSource
         param_types = {
             'breaking_change': 'breaking_change_enum',
             'height': 'int',
@@ -1913,7 +1913,7 @@ class User(
             return request.execute()
 
     def get_pioneer_data(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -1943,7 +1943,7 @@ class User(
             return request.execute()
 
     def create_pioneer_datum(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -1974,10 +1974,10 @@ class User(
             return request.execute()
 
     def get_posts(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.post import Post
+        from te_fb.adobjects.post import Post
         param_types = {
             'include_hidden': 'bool',
             'q': 'string',
@@ -2011,10 +2011,10 @@ class User(
             return request.execute()
 
     def get_rich_media_documents(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.canvas import Canvas
+        from te_fb.adobjects.canvas import Canvas
         param_types = {
             'query': 'string',
         }
@@ -2043,7 +2043,7 @@ class User(
             return request.execute()
 
     def create_staging_resource(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -2074,10 +2074,10 @@ class User(
             return request.execute()
 
     def get_videos(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.advideo import AdVideo
+        from te_fb.adobjects.advideo import AdVideo
         param_types = {
             'type': 'type_enum',
         }
@@ -2107,10 +2107,10 @@ class User(
             return request.execute()
 
     def create_video(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.advideo import AdVideo
+        from te_fb.adobjects.advideo import AdVideo
         param_types = {
             'adaptive_type': 'string',
             'animated_effect_id': 'unsigned int',

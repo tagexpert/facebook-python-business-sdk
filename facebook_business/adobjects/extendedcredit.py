@@ -18,11 +18,11 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.adobjects.abstractobject import AbstractObject
-from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
-from facebook_business.adobjects.objectparser import ObjectParser
-from facebook_business.api import FacebookRequest
-from facebook_business.typechecker import TypeChecker
+from te_fb.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.abstractcrudobject import AbstractCrudObject
+from te_fb.adobjects.objectparser import ObjectParser
+from te_fb.api import FacebookRequest
+from te_fb.typechecker import TypeChecker
 
 """
 This class is auto-generated.
@@ -59,7 +59,7 @@ class ExtendedCredit(
         send_bill_to_biz_name = 'send_bill_to_biz_name'
 
     def api_get(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {
@@ -89,10 +89,10 @@ class ExtendedCredit(
             return request.execute()
 
     def get_extended_credit_invoice_groups(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.extendedcreditinvoicegroup import ExtendedCreditInvoiceGroup
+        from te_fb.adobjects.extendedcreditinvoicegroup import ExtendedCreditInvoiceGroup
         param_types = {
         }
         enums = {
@@ -120,10 +120,10 @@ class ExtendedCredit(
             return request.execute()
 
     def create_extended_credit_invoice_group(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.extendedcreditinvoicegroup import ExtendedCreditInvoiceGroup
+        from te_fb.adobjects.extendedcreditinvoicegroup import ExtendedCreditInvoiceGroup
         param_types = {
             'emails': 'list<string>',
             'name': 'string',
@@ -153,10 +153,10 @@ class ExtendedCredit(
             return request.execute()
 
     def get_owning_credit_allocation_configs(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.extendedcreditallocationconfig import ExtendedCreditAllocationConfig
+        from te_fb.adobjects.extendedcreditallocationconfig import ExtendedCreditAllocationConfig
         param_types = {
             'receiving_business_id': 'string',
         }
@@ -185,10 +185,10 @@ class ExtendedCredit(
             return request.execute()
 
     def create_owning_credit_allocation_config(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
-        from facebook_business.adobjects.extendedcreditallocationconfig import ExtendedCreditAllocationConfig
+        from te_fb.adobjects.extendedcreditallocationconfig import ExtendedCreditAllocationConfig
         param_types = {
             'amount': 'Object',
             'liability_type': 'liability_type_enum',
@@ -224,7 +224,7 @@ class ExtendedCredit(
             return request.execute()
 
     def create_whatsapp_credit_sharing_and_attach(self, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
-        from facebook_business.utils import api_utils
+        from te_fb.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
         param_types = {

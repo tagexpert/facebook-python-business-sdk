@@ -20,8 +20,8 @@
 
 from unittest import TestCase
 
-from facebook_business.adobjects.serverside.content import Content
-from facebook_business.adobjects.serverside.delivery_category import DeliveryCategory
+from te_fb.adobjects.serverside.content import Content
+from te_fb.adobjects.serverside.delivery_category import DeliveryCategory
 
 
 class TestContent(TestCase):

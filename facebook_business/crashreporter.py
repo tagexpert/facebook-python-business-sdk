@@ -6,11 +6,11 @@ import logging
 
 from enum import Enum
 
-from facebook_business.api import FacebookRequest
-from facebook_business.session import FacebookSession
-from facebook_business.api import FacebookAdsApi
-from facebook_business.exceptions import FacebookError
-from facebook_business.exceptions import FacebookRequestError
+from te_fb.api import FacebookRequest
+from te_fb.session import FacebookSession
+from te_fb.api import FacebookAdsApi
+from te_fb.exceptions import FacebookError
+from te_fb.exceptions import FacebookRequestError
 
 
 class Reasons(Enum):
@@ -87,7 +87,7 @@ class CrashReporter(object):
         if reason is None:
             extracted_tb = traceback.extract_tb(tb, limit=100)
             for ii, (filename, line, funcname, code) in enumerate(extracted_tb):
-                if filename.find('facebook_business') != -1:
+                if filename.find('te_fb') != -1:
                     reason = Reasons.SDK
 
         if reason is None:

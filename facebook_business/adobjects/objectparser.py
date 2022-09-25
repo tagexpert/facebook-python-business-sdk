@@ -18,10 +18,10 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from facebook_business.exceptions import (
+from te_fb.exceptions import (
     FacebookBadObjectError,
 )
-from facebook_business.adobjects.abstractobject import AbstractObject
+from te_fb.adobjects.abstractobject import AbstractObject
 
 class ObjectParser:
     """
